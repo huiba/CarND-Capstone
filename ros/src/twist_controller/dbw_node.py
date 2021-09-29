@@ -92,13 +92,13 @@ class DBWNode(object):
                                                                                    self.linear_vel,
                                                                                    self.angular_vel)
             if self.dbw_enabled:
-                rospy.logwarn("current_vel: {}".format(self.current_vel))
-                rospy.logwarn("linear_vel: {}".format(self.linear_vel))
-                rospy.logwarn("angular_vel: {}".format(self.angular_vel))
+                #rospy.logwarn("current_vel: {}".format(self.current_vel))
+                #rospy.logwarn("linear_vel: {}".format(self.linear_vel))
+                #rospy.logwarn("angular_vel: {}".format(self.angular_vel))
 
-                rospy.logwarn("throttle: {}".format(self.throttle))
-                rospy.logwarn("brake: {}".format(self.brake))
-                rospy.logwarn("steering: {}".format(self.steering))
+                #rospy.logwarn("throttle: {}".format(self.throttle))
+                #rospy.logwarn("brake: {}".format(self.brake))
+                #rospy.logwarn("steering: {}".format(self.steering))
                 self.publish(self.throttle, self.brake, self.steering)
             rate.sleep()
 
